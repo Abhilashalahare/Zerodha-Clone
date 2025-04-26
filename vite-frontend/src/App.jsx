@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-import { useState } from 'react'
-
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      hii
-    </>
-  )
-}
-
-export default App
-=======
-
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './landing_page/home/HomePage';
@@ -28,13 +10,13 @@ import Navbar from "./landing_page/Navbar";
 import Footer from "./landing_page/Footer";
 import Login from './landing_page/signup/Login';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
     <>
       <Navbar />
-      <ToastContainer/>
+      <ToastContainer />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/login' element={<Login />} />
@@ -50,4 +32,3 @@ function App() {
 }
 
 export default App;
->>>>>>> home-component
