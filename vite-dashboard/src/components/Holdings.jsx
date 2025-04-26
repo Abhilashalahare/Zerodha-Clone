@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios, { all } from "axios"; //help to connect with api
 import { VerticalGraph } from "./VerticalGraph";
 
-import { holdings } from "../data/data";
+import { holdings } from "../data/Data";
 
 const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
